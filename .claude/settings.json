@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(docs/**)",
+      "Write(docs/**)",
+      "Edit(harness/rules.json)",
+      "Write(harness/rules.json)",
+      "Edit(harness/r2-purpose.md)",
+      "Write(harness/r2-purpose.md)",
+      "Edit(harness/r3-pipeline.md)",
+      "Write(harness/r3-pipeline.md)",
+      "Edit(harness/r4-artifacts.md)",
+      "Write(harness/r4-artifacts.md)",
+      "Edit(harness/r5-gates.md)",
+      "Write(harness/r5-gates.md)",
+      "Edit(harness/r6-roles.md)",
+      "Write(harness/r6-roles.md)",
+      "Edit(harness/r7-orchestrator.md)",
+      "Write(harness/r7-orchestrator.md)",
+      "Edit(harness/r8-verification.md)",
+      "Write(harness/r8-verification.md)"
+    ]
+  }
+}

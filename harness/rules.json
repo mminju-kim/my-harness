@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "sources": ["harness/r5-gates.md", "docs/design.md", "docs/story-service.md"],
+  "screens": ["home", "free-content", "member-library", "skill-library", "mission-detail", "submission", "my-learning", "my-assets", "asset-detail", "admin-review"],
+  "frame": { "width": 390, "height": 844 },
+
+  "M1": {
+    "sections": ["목적", "유저스토리", "데이터 필드", "권한", "상태값"],
+    "story_section": "유저스토리",
+    "story_ref_pattern": "US-[1-5]"
+  },
+  "M2": {
+    "min": 5,
+    "max": 8,
+    "fields": ["ui_url", "UX 포인트", "UI 포인트", "반영할 것"]
+  },
+  "M3": { "min": 2, "max": 3 },
+
+  "D1": {
+    "colors": ["#141414", "#262626", "#707070", "#adadad", "#ffffff", "#f3f3f3", "#f0f0f0", "#e0e0e0", "#0066ff"],
+    "opacity": 1,
+    "exceptions": {
+      "badge-overlay": [{ "color": "#737373", "opacity": 0.56 }]
+    }
+  },
+  "D2": {
+    "accent": "#0066ff",
+    "max_per_frame": 2,
+    "forbidden_components": ["button-primary"]
+  },
+  "D3": {
+    "radii": [0, 16, 24, 9999],
+    "squircle_component": "app-icon-squircle",
+    "squircle_ratio": 0.3,
+    "squircle_tolerance": 0.5
+  },
+  "D4": {
+    "shadow_types": ["DROP_SHADOW", "INNER_SHADOW"],
+    "allowed_components": ["segmented-control-active"]
+  },
+  "D5": {
+    "families": ["Pretendard", "Pretendard Variable"],
+    "weights": [300, 400, 600, 700],
+    "letter_spacing": 0,
+    "heading_style_prefixes": ["display", "heading-"],
+    "heading_weight": 700
+  },
+  "D6": {
+    "spacing": [0, 4, 8, 12, 16, 24, 32, 48, 64],
+    "keys": ["paddingTop", "paddingRight", "paddingBottom", "paddingLeft", "itemSpacing", "counterAxisSpacing"]
+  },
+  "D7": {
+    "components": ["text-input"],
+    "rest_states": [null, "rest"]
+  },
+  "D8": {},
+
+  "A1": {
+    "screens": ["my-assets", "asset-detail", "submission"],
+    "component": "visibility-control",
+    "default": "private"
+  },
+  "A2": {
+    "screens": ["my-assets", "asset-detail", "submission"],
+    "component": "visibility-option",
+    "value": "sale_requested",
+    "allowed_roles": ["seller"]
+  },
+  "B1": {
+    "screens": ["admin-review", "asset-detail"],
+    "component": "review-checklist",
+    "items": {
+      "C1": "실제 업무에 써본 것",
+      "C2": "결과 예시가 있는 것",
+      "C3": "사용 방법이 명확한 것",
+      "C4": "초보자가 따라할 수 있는 것",
+      "C5": "특정 툴/버전/환경 조건이 적혀 있는 것",
+      "C6": "개인정보/고객정보/회사기밀이 없는 것",
+      "C7": "저작권 문제가 없는 것",
+      "C8": "구매자가 바로 써볼 수 있는 것"
+    }
+  },
+  "B2": {
+    "screens": ["admin-review"],
+    "button": "approve-button",
+    "checklist": "review-checklist"
+  },
+  "B3": {
+    "screens": "all",
+    "allowed_email_domains": ["example.com"],
+    "allowed_phones": ["010-0000-0000"]
+  }
+}

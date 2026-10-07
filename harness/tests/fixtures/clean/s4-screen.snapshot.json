@@ -1,0 +1,727 @@
+{
+  "screen_id": "my-assets",
+  "stage": "s4",
+  "frames": [
+    {
+      "name": "my-assets / paid",
+      "role": "paid",
+      "width": 390,
+      "height": 844,
+      "nodes": [
+        {
+          "name": "my-assets / paid",
+          "type": "FRAME",
+          "width": 390,
+          "height": 844,
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "nav",
+          "type": "INSTANCE",
+          "component": "nav-pill",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ],
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "itemSpacing": 8
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "characters": "내 자산",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            700
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "heading-1",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "lead",
+          "type": "TEXT",
+          "characters": "내가 만든 프롬프트와 스킬을 모아 둬요",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            300
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "body-lg",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "card",
+          "type": "FRAME",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "color": "#f0f0f0",
+              "opacity": 1
+            }
+          ],
+          "strokeWeight": 1,
+          "radii": [
+            24,
+            24,
+            24,
+            24
+          ],
+          "paddingTop": 24,
+          "paddingBottom": 24,
+          "itemSpacing": 12
+        },
+        {
+          "name": "icon",
+          "type": "INSTANCE",
+          "component": "app-icon-squircle",
+          "width": 48,
+          "height": 48,
+          "radii": [
+            14.4,
+            14.4,
+            14.4,
+            14.4
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "tag",
+          "type": "INSTANCE",
+          "component": "badge-overlay",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#737373",
+              "opacity": 0.56
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "popular",
+          "type": "INSTANCE",
+          "component": "badge-popular",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#0066ff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "tabs-active",
+          "type": "INSTANCE",
+          "component": "segmented-control-active",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW"
+            }
+          ]
+        },
+        {
+          "name": "search",
+          "type": "INSTANCE",
+          "component": "text-input",
+          "props": {
+            "state": "rest"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f0f0f0",
+              "opacity": 1
+            }
+          ],
+          "strokes": [],
+          "radii": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "paddingTop": 12,
+          "paddingLeft": 16
+        },
+        {
+          "name": "visibility",
+          "type": "INSTANCE",
+          "component": "visibility-control",
+          "props": {
+            "default": "private"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "option-private",
+          "type": "INSTANCE",
+          "component": "visibility-option",
+          "props": {
+            "value": "private"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "option-member_only",
+          "type": "INSTANCE",
+          "component": "visibility-option",
+          "props": {
+            "value": "member_only"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "owner",
+          "type": "TEXT",
+          "characters": "작성자 kim@example.com · 010-0000-0000",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            400
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "caption",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "cta",
+          "type": "INSTANCE",
+          "component": "button-primary",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ],
+          "paddingLeft": 16,
+          "paddingRight": 16
+        },
+        {
+          "name": "cta-label",
+          "type": "TEXT",
+          "characters": "새 자산 등록",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            600
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "link",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "my-assets / seller",
+      "role": "seller",
+      "width": 390,
+      "height": 844,
+      "nodes": [
+        {
+          "name": "my-assets / seller",
+          "type": "FRAME",
+          "width": 390,
+          "height": 844,
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "nav",
+          "type": "INSTANCE",
+          "component": "nav-pill",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ],
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "itemSpacing": 8
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "characters": "내 자산",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            700
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "heading-1",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "lead",
+          "type": "TEXT",
+          "characters": "내가 만든 프롬프트와 스킬을 모아 둬요",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            300
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "body-lg",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "card",
+          "type": "FRAME",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "color": "#f0f0f0",
+              "opacity": 1
+            }
+          ],
+          "strokeWeight": 1,
+          "radii": [
+            24,
+            24,
+            24,
+            24
+          ],
+          "paddingTop": 24,
+          "paddingBottom": 24,
+          "itemSpacing": 12
+        },
+        {
+          "name": "icon",
+          "type": "INSTANCE",
+          "component": "app-icon-squircle",
+          "width": 48,
+          "height": 48,
+          "radii": [
+            14.4,
+            14.4,
+            14.4,
+            14.4
+          ],
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "tag",
+          "type": "INSTANCE",
+          "component": "badge-overlay",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#737373",
+              "opacity": 0.56
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "popular",
+          "type": "INSTANCE",
+          "component": "badge-popular",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#0066ff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "tabs-active",
+          "type": "INSTANCE",
+          "component": "segmented-control-active",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ],
+          "effects": [
+            {
+              "type": "DROP_SHADOW"
+            }
+          ]
+        },
+        {
+          "name": "search",
+          "type": "INSTANCE",
+          "component": "text-input",
+          "props": {
+            "state": "rest"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f0f0f0",
+              "opacity": 1
+            }
+          ],
+          "strokes": [],
+          "radii": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "paddingTop": 12,
+          "paddingLeft": 16
+        },
+        {
+          "name": "visibility",
+          "type": "INSTANCE",
+          "component": "visibility-control",
+          "props": {
+            "default": "private"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "option-private",
+          "type": "INSTANCE",
+          "component": "visibility-option",
+          "props": {
+            "value": "private"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "option-member_only",
+          "type": "INSTANCE",
+          "component": "visibility-option",
+          "props": {
+            "value": "member_only"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "option-sale_requested",
+          "type": "INSTANCE",
+          "component": "visibility-option",
+          "props": {
+            "value": "sale_requested"
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "owner",
+          "type": "TEXT",
+          "characters": "작성자 kim@example.com · 010-0000-0000",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            400
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "caption",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "cta",
+          "type": "INSTANCE",
+          "component": "button-primary",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ],
+          "paddingLeft": 16,
+          "paddingRight": 16
+        },
+        {
+          "name": "cta-label",
+          "type": "TEXT",
+          "characters": "새 자산 등록",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            600
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "link",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

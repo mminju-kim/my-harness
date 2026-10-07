@@ -1,0 +1,156 @@
+{
+  "screen_id": "admin-review",
+  "stage": "s4",
+  "frames": [
+    {
+      "name": "admin-review / admin",
+      "role": "admin",
+      "width": 390,
+      "height": 844,
+      "nodes": [
+        {
+          "name": "admin-review / admin",
+          "type": "FRAME",
+          "width": 390,
+          "height": 844,
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "title",
+          "type": "TEXT",
+          "characters": "검수 대기",
+          "fontFamilies": [
+            "Pretendard"
+          ],
+          "fontWeights": [
+            700
+          ],
+          "letterSpacings": [
+            0
+          ],
+          "textStyle": "heading-1",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ]
+        },
+        {
+          "name": "checklist",
+          "type": "INSTANCE",
+          "component": "review-checklist",
+          "props": {
+            "items": [
+              {
+                "id": "C1",
+                "checked": true
+              },
+              {
+                "id": "C2",
+                "checked": true
+              },
+              {
+                "id": "C3",
+                "checked": true
+              },
+              {
+                "id": "C4",
+                "checked": false
+              },
+              {
+                "id": "C5",
+                "checked": false
+              },
+              {
+                "id": "C6",
+                "checked": false
+              },
+              {
+                "id": "C7",
+                "checked": false
+              },
+              {
+                "id": "C8",
+                "checked": false
+              }
+            ]
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#f3f3f3",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            24,
+            24,
+            24,
+            24
+          ]
+        },
+        {
+          "name": "approve",
+          "type": "INSTANCE",
+          "component": "approve-button",
+          "props": {
+            "enabled": true
+          },
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#141414",
+              "opacity": 1
+            }
+          ],
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        },
+        {
+          "name": "reject",
+          "type": "INSTANCE",
+          "component": "button-outline",
+          "fills": [
+            {
+              "type": "SOLID",
+              "color": "#ffffff",
+              "opacity": 1
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "color": "#e0e0e0",
+              "opacity": 1
+            }
+          ],
+          "strokeWeight": 1,
+          "radii": [
+            9999,
+            9999,
+            9999,
+            9999
+          ]
+        }
+      ]
+    }
+  ]
+}
